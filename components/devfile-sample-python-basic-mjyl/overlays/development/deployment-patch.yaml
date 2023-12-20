@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-mjyl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-uthh-tenant/appstudio/devfile-sample-python-basic-mjyl@sha256:781b06713b1b5955fc5d878517d64498a9f4880a50362ebb8abe54abf450f55b
+        name: my-python
+        resources: {}
+status: {}
